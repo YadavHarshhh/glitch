@@ -95,9 +95,9 @@ const Slideshow = ({ images, autoplaySpeed = 5000 }: SlideshowProps) => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 text-white">
-              <h3 className="text-xl md:text-2xl font-bold">Glitch! REZUME 4.0 - Highlight {currentIndex + 1}</h3>
+              <h3 className="text-xl md:text-2xl font-bold">PAST SUCCESS - Highlight {currentIndex + 1}</h3>
               <p className="text-sm md:text-base opacity-80">
-                Exciting moments from Glitch! eSports Society's REZUME 4.0 tournament
+                Exciting moments from Glitch! eSports Society's past success
               </p>
             </div>
           </motion.div>
