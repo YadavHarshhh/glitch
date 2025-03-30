@@ -37,7 +37,7 @@ export default function Home() {
   const stats = [
     { label: "Players", value: 300 },
     { label: "Games", value: 7 },
-    { label: "Worth Prize Pool", value: 50000, prefix: "₹" },
+    { label: "Worth Prize Pool", value: 84000, prefix: "₹" },
     { label: "Teams", value: 100 },
   ]
 
@@ -104,7 +104,7 @@ export default function Home() {
       <section ref={heroRef} className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 via-blue-900/20 to-black"></div>
-          <div className="absolute inset-0 bg-[url('https://media.discordapp.net/attachments/1092778908782436404/1355878600284569780/MUJ.jpg?ex=67ea87d9&is=67e93659&hm=26c841f8bd0f09de5387e1b89e7f40aaad7904e2be7a9075a370da5778354888&=&format=webp&width=550&height=309')]  bg-cover bg-center opacity-30"></div>
+          <div className="absolute inset-0 bg-[url('https://media.discordapp.net/attachments/1090226053307445348/1355983625778364718/Copy_of_MUJ_page-0001.jpg?ex=67eae9a9&is=67e99829&hm=b7be00777a281d5a075ea3c48973b98d02d5f1db20bb7949e148db77212c17a4&=&format=webp&width=1340&height=754')]  bg-cover bg-center opacity-50"></div>
           
         </motion.div>
 
