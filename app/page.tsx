@@ -35,10 +35,10 @@ export default function Home() {
   ]
 
   const stats = [
-    { label: "Players", value: 500 },
+    { label: "Players", value: 300 },
     { label: "Games", value: 7 },
-    { label: "Prize Pool", value: 50000, prefix: "₹" },
-    { label: "Teams", value: 120 },
+    { label: "Worth Prize Pool", value: 50000, prefix: "₹" },
+    { label: "Teams", value: 100 },
   ]
 
   // Slideshow images
