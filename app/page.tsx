@@ -68,6 +68,15 @@ export default function Home() {
 
   const handleMouseEnter = () => setCursorHovered(true)
   const handleMouseLeave = () => setCursorHovered(false)
+  const registrationLinks = {
+    "TEKKEN": "https://forms.gle/a8gVYnC2erC49ajz9",
+    "BGMI": "https://forms.gle/AMcY9QLjasVYJPZD9",
+    "FIFA": "https://forms.gle/CL9mukhVw7TcbuXz9",
+    "VALORANT": "https://forms.gle/CL9mukhVw7TcbuXz9",
+    "CLASH ROYALE": "https://forms.gle/9Pcn38BmojACJFtU7",
+    "MINECRAFT BED WARS": "https://forms.gle/Vuj8XCCkKJBi9iCa8",
+    "F1": "https://forms.gle/rjYtML1Wrsv8zWEFA",
+  };
 
   const playSound = () => {
     const audio = new Audio("/click.mp3")
@@ -312,7 +321,8 @@ export default function Home() {
                   </div>
                   <CardContent className="p-4">
                     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={playSound}>
-                      <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white relative overflow-hidden group">
+                      <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white relative overflow-hidden group"
+                       onClick={() => window.open(registrationLinks[game.name], "_blank", "noopener,noreferrer")}>
                         <span className="relative z-10">Register for {game.name}</span>
                         <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
                       </Button>
