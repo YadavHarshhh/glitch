@@ -245,12 +245,14 @@ export default function Home() {
               onClick={playSound}
             >
               <Button
-                size="lg"
-                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white relative overflow-hidden group"
-              >
-                <span className="relative z-10">Register Now</span>
-                <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-              </Button>
+  size="lg"
+  onClick={() => document.getElementById('rezume-battlefield').scrollIntoView({ behavior: 'smooth' })}
+  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white relative overflow-hidden group"
+>
+  <span className="relative z-10">Register Now</span>
+  <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+</Button>
+
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -260,13 +262,15 @@ export default function Home() {
               onClick={playSound}
             >
               <Button
-                size="lg"
-                variant="outline"
-                className="border-purple-500 text-purple-500 hover:bg-purple-500/10 relative overflow-hidden group"
-              >
-                <span className="relative z-10">Learn More</span>
-                <span className="absolute inset-0 bg-purple-500/10 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-              </Button>
+  size="lg"
+  variant="outline"
+  onClick={() => document.getElementById('about-rezume').scrollIntoView({ behavior: 'smooth' })}
+  className="border-purple-500 text-purple-500 hover:bg-purple-500/10 relative overflow-hidden group"
+>
+  <span className="relative z-10">Learn More</span>
+  <span className="absolute inset-0 bg-purple-500/10 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+</Button>
+
             </motion.div>
           </motion.div>
         </div>
@@ -349,9 +353,13 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold text-center mb-16"
           >
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">
-              REZUME 4.0 - Choose Your Battlefield
-            </span>
+            <span 
+  id="rezume-battlefield"
+  className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500"
+>
+  REZUME 4.0 - Choose Your Battlefield
+</span>
+
           </motion.h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -414,9 +422,12 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-3xl md:text-5xl font-bold mb-8"
             >
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">
-                About REZUME 4.0
-              </span>
+              <span 
+  id="about-rezume"
+  className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500"
+>
+  About REZUME 4.0
+</span>
             </motion.h2>
 
             <div className="space-y-6 text-lg text-gray-300">
