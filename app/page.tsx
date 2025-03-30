@@ -35,11 +35,15 @@ export default function Home() {
   ]
 
   const stats = [
-    { label: "Players", value: 300 },
+    { label: "Players", value: 300, suffix: "+" }, 
     { label: "Games", value: 7 },
     { label: "Worth Prize Pool", value: 84000, prefix: "₹" },
     { label: "Teams", value: 100 },
-  ]
+]
+
+
+
+  
 
   // Slideshow images
   const slideshowImages = [
@@ -71,7 +75,7 @@ export default function Home() {
   const registrationLinks = {
     "TEKKEN": "https://forms.gle/a8gVYnC2erC49ajz9",
     "BGMI": "https://forms.gle/AMcY9QLjasVYJPZD9",
-    "FIFA": "https://forms.gle/CL9mukhVw7TcbuXz9",
+    "FIFA": "https://forms.gle/uZpYZNDqUU8fPLaC9",
     "VALORANT": "https://forms.gle/CL9mukhVw7TcbuXz9",
     "CLASH ROYALE": "https://forms.gle/9Pcn38BmojACJFtU7",
     "MINECRAFT BED WARS": "https://forms.gle/Vuj8XCCkKJBi9iCa8",
