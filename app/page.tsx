@@ -101,12 +101,27 @@ export default function Home() {
       <ParticleBackground />
 
       {/* Hero Section */}
-      <section ref={heroRef} className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
-        <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 via-blue-900/20 to-black"></div>
-          <div className="absolute inset-0 bg-[url('https://media.discordapp.net/attachments/1090226053307445348/1355983625778364718/Copy_of_MUJ_page-0001.jpg?ex=67eae9a9&is=67e99829&hm=b7be00777a281d5a075ea3c48973b98d02d5f1db20bb7949e148db77212c17a4&=&format=webp&width=1340&height=754')]  bg-cover bg-center opacity-50"></div>
-          
-        </motion.div>
+<section ref={heroRef} className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+  <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
+
+    {/* Gradient Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-b from-purple-900/30 via-blue-900/30 to-black"></div>
+
+    {/* Mobile Background */}
+    <div 
+      className="absolute inset-0 bg-cover bg-center opacity-50 md:hidden" 
+      style={{ backgroundImage: "url('https://media.discordapp.net/attachments/1090226053307445348/1355988978884415749/Untitled.png?ex=67eaeea5&is=67e99d25&hm=ef9cd51e0e68d76cab1b2948cd2fb03ce2ec6876e43e80ce00ad23d052322d80&=&format=webp&quality=lossless&width=351&height=350')" }}>
+    </div>
+
+    {/* PC Background */}
+    <div 
+      className="absolute inset-0 bg-cover bg-center opacity-50 hidden md:block" 
+      style={{ backgroundImage: "url('https://media.discordapp.net/attachments/1090226053307445348/1355983625778364718/Copy_of_MUJ_page-0001.jpg?ex=67eae9a9&is=67e99829&hm=b7be00777a281d5a075ea3c48973b98d02d5f1db20bb7949e148db77212c17a4&=&format=webp&width=1340&height=754')" }}>
+    </div>
+
+  </motion.div>
+
+  
 
         <div className="container relative z-10 flex flex-col items-center justify-center gap-8 px-4 text-center">
           <motion.div
@@ -115,16 +130,69 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col items-center justify-center gap-6"
           >
-            <div className="text-center">
-              <motion.h1
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.3 }}
-                className="text-3xl md:text-5xl font-bold mb-6"
-              >
-                Glitch! eSports Society Presents
-              </motion.h1>
-            </div>
+            <div className="text-center relative">
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1, delay: 0.3 }}
+    className="relative inline-block"
+  >
+    {/* Main Heading */}
+    <h1 className="text-4xl md:text-6xl font-bold mb-6 glitch-text">
+      Glitch! eSports Society Presents
+    </h1>
+  </motion.div>
+
+  <style jsx>{`
+    .glitch-text {
+      color: #fff;
+      text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #ff0000, 
+        0 0 20px #ff0000;
+      position: relative;
+      display: inline-block;
+      animation: glitch 1.5s infinite alternate;
+    }
+
+    /* Flicker Animation */
+    @keyframes glitch {
+      0% {
+        text-shadow: 
+          0 0 5px #fff, 
+          0 0 10px #ff0000, 
+          0 0 20px #ff0000;
+        transform: translate(0, 0);
+      }
+      25% {
+        text-shadow: 
+          -2px 0 #ff0000, 
+          2px 0 #ffffff;
+        transform: translate(-2px, 2px);
+      }
+      50% {
+        text-shadow: 
+          2px 0 #ff0000, 
+          -2px 0 #ffffff;
+        transform: translate(2px, -2px);
+      }
+      75% {
+        text-shadow: 
+          -2px -2px #ff0000, 
+          2px 2px #ffffff;
+        transform: translate(-1px, 1px);
+      }
+      100% {
+        text-shadow: 
+          0 0 5px #fff, 
+          0 0 10px #ff0000, 
+          0 0 20px #ff0000;
+        transform: translate(0, 0);
+      }
+    }
+  `}</style>
+</div>
+
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
               <motion.div whileHover={{ rotate: 5, scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
