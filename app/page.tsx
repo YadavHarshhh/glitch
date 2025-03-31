@@ -142,9 +142,10 @@ export default function Home() {
     className="relative inline-block"
   >
     {/* Main Heading */}
-    <h1 className="text-4xl md:text-6xl font-bold mb-6 glitch-text">
-      Glitch! eSports Society Presents
-    </h1>
+<h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500 animate-gradient">
+  Glitch! eSports Society Presents
+</h1>
+
   </motion.div>
 
   <style jsx>{`
