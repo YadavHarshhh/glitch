@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>Next.js</title>
+        <title>Glitch! eSports Society Presents REZUME 4.0 - The Ultimate Gaming Battleground</title>
       </head>
       <body className={inter.className}>
         <ThemeProvider
