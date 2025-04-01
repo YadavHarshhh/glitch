@@ -47,16 +47,16 @@ export default function Home() {
 
   // Slideshow images
   const slideshowImages = [
-    "https://media.discordapp.net/attachments/1090226053307445348/1355946095221670091/IMG_6482.jpg?ex=67eac6b5&is=67e97535&hm=16e717bf196dcee73f683d7b7df6f8e40a7635c14326a5a88cd24d7c989462ef&=&format=webp&width=1156&height=650",
-    "https://media.discordapp.net/attachments/1090226053307445348/1355946092558290984/IMG_6696-Enhanced-NR.jpg?ex=67eac6b4&is=67e97534&hm=097b45977beaae3017779bde33050057efc6ec010ba844357a45390bac5ac929&=&format=webp&width=1156&height=650",
-    "https://media.discordapp.net/attachments/1090226053307445348/1355946100212891719/IMG_2702.JPG?ex=67eac6b6&is=67e97536&hm=34259f9cc8477d97bd0696bd4ff02436db1dff0725754d3fa3e834c2e75fe900&=&format=webp&width=975&height=650",
-    "https://media.discordapp.net/attachments/1090226053307445348/1355946097423417394/IMG_2725.JPG?ex=67eac6b5&is=67e97535&hm=f2d7d472d88cea12b7318cd2085b69842aaf9998498ed0bfc9b5e280bf4c8fb0&=&format=webp&width=975&height=650",
-    "https://media.discordapp.net/attachments/1090226053307445348/1355946096148480232/IMG_5609.jpg?ex=67eac6b5&is=67e97535&hm=00c470cfa22eb46ca5264c19eaf6bd59cdd071b106f8211de10597b141a3c475&=&format=webp&width=867&height=650",
-    "https://media.discordapp.net/attachments/1090226053307445348/1355946101730967763/IMG-20240529-WA0035.jpg?ex=67eac6b6&is=67e97536&hm=2045eb6df09289a93fd2b2a82ef9a9c4724d45ac7df30fb2a3e6dedb6e5ec118&=&format=webp&width=867&height=650",
-    "https://media.discordapp.net/attachments/1090226053307445348/1355948856495313056/dhakasir.jpg?ex=67eac947&is=67e977c7&hm=2a8bd7d1cce5fe5e02778c7a8a20ec112de57266487c1bb8ef7ff8ef9ec8dd4b&=&format=webp&width=1285&height=650",
-    "https://media.discordapp.net/attachments/1090226053307445348/1355948855790800966/DSC2764.jpg?ex=67eac947&is=67e977c7&hm=1d3965bf3c5fee0df644b572b1377302e1a8148fecaa86ddcfef1dcb6e307406&=&format=webp&width=1156&height=650",
-    "https://media.discordapp.net/attachments/1090226053307445348/1355951970581479585/DSC4756-Enhanced-SR.jpg?ex=67eacc2e&is=67e97aae&hm=98dd57b3c7c655f0e286fffbda6684a09632398b1f19fb2e80674f5839e14c04&=&format=webp&width=1156&height=650",
-    "https://media.discordapp.net/attachments/1090226053307445348/1355951973446193272/DSC4776-Enhanced-SR.jpg?ex=67eacc2e&is=67e97aae&hm=c61762b5f0f2324437a76320ba5397cdac996595be5f3eb06a04932107449ad3&=&format=webp&width=1002&height=650"
+    "high1.jpg",
+    "high2.jpg",
+    "high3.jpg",
+    "high4.JPG",
+    "HIGHLIGHT5.jpg",
+    "high6.jpg",
+    "dhakasir.jpg",
+    "high8.jpg",
+    "high9.webp",
+    "high10.webp"
 ]
 
   useEffect(() => {
